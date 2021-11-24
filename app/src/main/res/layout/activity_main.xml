@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="20dp"
+    android:paddingVertical="20dp"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_qualification_head"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Select your qualification-"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/rg_qualification"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_qualification_head">
+
+            <RadioButton
+                android:id="@+id/rb_master"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Master" />
+
+            <RadioButton
+                android:id="@+id/rb_bsc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bsc" />
+
+            <RadioButton
+                android:id="@+id/rb_diploma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Diploma" />
+
+            <RadioButton
+                android:id="@+id/rb_sec_school"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Secondary school" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_language_head"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Select your programming languages-"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rg_qualification" />
+
+        <CheckBox
+            android:id="@+id/cb_java"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Java"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_language_head" />
+
+        <CheckBox
+            android:id="@+id/cb_c_sharp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="C#"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cb_java" />
+
+        <CheckBox
+            android:id="@+id/cb_php"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="PHP"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cb_c_sharp" />
+
+        <CheckBox
+            android:id="@+id/cb_python"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Python"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cb_php" />
+
+        <CheckBox
+            android:id="@+id/cb_swift"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Swift"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cb_python" />
+
+        <TextView
+            android:id="@+id/tv_experience"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Experience(in years): 0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cb_swift" />
+
+        <SeekBar
+            android:id="@+id/sb_experience"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:max="10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_experience" />
+        <TextView
+            android:id="@+id/tv_annual_salary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Annual Salary: $0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sb_experience" />
+
+        <TextView
+            android:id="@+id/tv_monthly_salary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Monthly Salary: $0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_annual_salary" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
